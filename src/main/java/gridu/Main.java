@@ -12,6 +12,7 @@ public class Main {
         System.out.println(ia.evaluate(new Text("88.150.150.2"), new Text("88.147.213.79/12")));
         System.out.println(ia.evaluate(new Text("88.160.1.1"), new Text("88.147.213.79/12")));
         System.out.println(ia.evaluate(new Text("88.143.255.255"), new Text("88.147.213.79/12")));
+        System.out.println(ia.evaluate(null, new Text("88.147.213.79/12")));
 
     }
 }

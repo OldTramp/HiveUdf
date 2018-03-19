@@ -14,6 +14,9 @@ public final class SubnetAddressChecker extends UDF {
 
 
     public boolean evaluate(final Text address, final Text subnet) {
+        if (address == null || subnet == null) {
+            return false;
+        }
 
         return new SubnetUtils(subnet.toString()).getInfo().isInRange(address.toString());
     }
